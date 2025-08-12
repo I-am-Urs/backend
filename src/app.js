@@ -23,7 +23,7 @@ app.use(morgan('combined', {
 }));
 
 // CORS configuration
-const allowedOrigin = process.env.FRONTEND_URL || 'http://localhost:8080';
+const allowedOrigin = process.env.FRONTEND_URL;
 app.use(cors({
   origin: allowedOrigin,
   credentials: true,
